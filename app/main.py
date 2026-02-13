@@ -29,8 +29,8 @@ sorted_variables = {
     "immutable": []
 }
 
-for variable in all_variables:
-    if type(variable) in mutable:
-        sorted_variables["mutable"].append(variable)
+for one_variable in all_variables:
+    if type(one_variable) in mutable:
+        sorted_variables["mutable"].append(one_variable)
     else:
-        sorted_variables["immutable"].append(variable)
+        sorted_variables["immutable"].append(one_variable)
